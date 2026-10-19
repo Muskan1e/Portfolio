@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muskan Sharma | Frontend Developer & B.Tech CSE Student</title>
+  
+  <!-- Meta description for SEO -->
+  <meta name="description" content="Portfolio of Muskan Sharma, 2nd Year B.Tech CSE Student & Passionate Frontend Developer specializing in clean, responsive web experiences.">
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <!-- Remix Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Swiper.js CSS (for Testimonials Carousel) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Animated Cursor (Desktop only) -->
+  <div class="custom-cursor-dot" id="cursor-dot"></div>
+  <div class="custom-cursor-outline" id="cursor-outline"></div>
+
+  <!-- ==============================================
+       1. HEADER / NAVBAR
+       ============================================== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <!-- Logo -->
+      <a href="#home" class="nav__logo">
+        <span class="logo__bracket">&lt;</span>Muskan<span class="logo__accent">.dev</span><span class="logo__bracket"> /&gt;</span>
+      </a>
+
+      <!-- Navigation Menu -->
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">Work</a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#testimonials" class="nav__link">Testimonials</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Mobile Menu Close Button -->
+        <button class="nav__close" id="nav-close" aria-label="Close menu">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+
+      <!-- Action Buttons: Dark/Light Mode & Mobile Toggle -->
+      <div class="nav__actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <i class="ri-moon-line" id="theme-icon"></i>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="nav__toggle" id="nav-toggle" aria-label="Open menu">
+          <i class="ri-menu-4-line"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==============================================
+       MAIN CONTENT
+       ============================================== -->
+  <main class="main">
+
+    <!-- ==============================================
+         2. HOME / HERO SECTION
+         ============================================== -->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <!-- Hero Text Content -->
+        <div class="home__data">
+          <div class="home__badge">
+            <span class="badge__dot"></span>
+            <span>Available for Internships & Projects</span>
+          </div>
+
+          <h1 class="home__title">
+            Hi, I'm <span class="text-accent">Muskan Sharma</span>
+          </h1>
+
+          <h2 class="home__subtitle">
+            <span class="subtitle__prefix">I am a</span>
+            <span class="typing-wrapper"><span class="typing-text" id="typing-text"></span><span class="typing-cursor">|</span></span>
+          </h2>
+
+          <p class="home__description">
+            Passionate 2nd-year B.Tech CSE student & aspiring Frontend Developer crafting modern, 
+            responsive, and user-friendly web experiences with clean code and creative designs.
+          </p>
+
+          <!-- Call to Action Buttons -->
+          <div class="home__buttons">
+            <a href="#contact" class="btn btn--primary">
+              <span>Hire Me</span>
+              <i class="ri-send-plane-fill"></i>
+            </a>
+            <!-- EDIT YOUR RESUME LINK HERE: Replace '#' with your resume pdf file (e.g. 'resume.pdf') -->
+            <a href="#contact" 
+              >
+              <i ></i>
+            </a>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="home__social">
+            <span class="home__social-text">Connect with me:</span>
+            <div class="home__social-links">
+              <!-- LinkedIn Link -->
+              <a href="https://www.linkedin.com/in/muskan-sharma-3a4b8537a" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="LinkedIn">
+                <i class="ri-linkedin-fill"></i> 
+              
+              </a>
+              <!-- GitHub Link (EDIT HERE) -->
+              <a href="https://github.com/Muskan1e" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="GitHub">
+                <i class="ri-github-fill"></i>
+              </a>
+              <!-- Instagram Link (EDIT HERE) -->
+              <a href="https://www.instagram.com/muskansharma.862" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="Instagram">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <!-- Email Link -->
+              <a href="mailto:muskansharm936@gmail.com" class="social__link" aria-label="Email">
+                <i class="ri-mail-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Profile Image with Decorative Shapes -->
+        <div class="home__visual">
+          <div class="blob-wrapper">
+            <!-- Decorative Glow Background -->
+            <div class="blob-glow"></div>
+
+            <!-- Profile Image Container -->
+            <div class="blob-shape">
+              <!-- EDIT YOUR PROFILE PHOTO HERE: replace src with your photo (e.g., 'profile.jpg') -->
+              <img 
+                src="myphotos.jpg/mypic.jpeg" 
+                alt="Muskan Sharma - Frontend Developer" 
+                class="home__img"
+                id="profile-img"
+                draggable="false"
+              >
+            </div>
+
+            <!-- Floating Tech Badges -->
+            <div class="floating-badge badge--top">
+              <i class="ri-html5-fill"></i>
+              <span>HTML5 / CSS3</span>
+            </div>
+            <div class="floating-badge badge--bottom">
+              <i class="ri-javascript-fill"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="floating-badge badge--code">
+              <i class="ri-code-s-slash-line"></i>
+              <span>Frontend Dev</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#about" class="home__scroll">
+        <i class="ri-arrow-down-double-line"></i>
+        <span>Scroll Down</span>
+      </a>
+    </section>
+
+    <!-- ==============================================
+         3. ABOUT SECTION
+         ============================================== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section__header">
+          <span class="section__subtitle">Get To Know Me</span>
+          <h2 class="section__title">About Me</h2>
+        </div>
+
+        <div class="about__container grid">
+          <!-- About Image Container -->
+          <div class="about__img-wrapper">
+            <div class="about__img-frame">
+              <!-- EDIT ABOUT PHOTO HERE: replace src with your own image -->
+              <img 
+                src="myphotos.jpg/mypic.jpeg" 
+                alt="Muskan Sharma working on frontend code" 
+                class="about__img"
+                draggable="false"
+              >
+              <div class="about__experience-badge">
+                <span class="badge__number">2nd</span>
+                <span class="badge__text">Year B.Tech CSE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- About Details & Stats -->
+          <div class="about__data">
+            <h3 class="about__heading">
+              A passionate developer who loves transforming ideas into functional, elegant web realities.
+            </h3>
+            
+            <p class="about__description">
+              Hello! I'm <strong>Muskan Sharma</strong>, currently pursuing my B.Tech degree in Computer Science & Engineering (2nd Year). 
+              I have a strong inclination toward frontend development, UI/UX design, and creating responsive web applications that look great on any device.
+            </p>
+
+            <p class="about__description">
+              I am constantly exploring new web technologies, building interactive projects, and collaborating on academic and hackathon solutions. 
+              My goal is to master modern frontend workflows and contribute meaningfully to impactful software products.
+            </p>
+
+            <!-- Quick Info Grid -->
+            <div class="about__info-grid">
+              <div class="info__item">
+                <span class="info__title">Education:</span>
+                <span class="info__value">B.Tech (CSE) 2nd Year</span>
+              </div>
+              <div class="info__item">
+                <span class="info__title">Location:</span>
+                <span class="info__value">Mohali,Punjab</span>
+              </div>
+              <div class="info__item">
+                <span class="info__title">Email:</span>
+                <span class="info__value">muskansharm936@gmail.com</span>
+              </div>
+              <div class="info__item">
+                <span class="info__title">Status:</span>
+                <span class="info__value text-accent font-semibold">Ready for Work</span>
+              </div>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="about__stats">
+              <div class="stat__card">
+                <div class="stat__icon"><i class="ri-calendar-check-line"></i></div>
+                <h4 class="stat__number">2+</h4>
+                <p class="stat__label">Years Learning</p>
+              </div>
+
+              <div class="stat__card">
+                <div class="stat__icon"><i class="ri-folder-shield-2-line"></i></div>
+                <h4 class="stat__number">5+</h4>
+                <p class="stat__label">Projects Done</p>
+              </div>
+
+              <div class="stat__card">
+                <div class="stat__icon"><i class="ri-award-line"></i></div>
+                <h4 class="stat__number">100%</h4>
+                <p class="stat__label">Dedication</p>
+              </div>
+            </div>
+
+            <!-- About Button -->
+            <div class="about__actions">
+              <a href="#contact" class="btn btn--primary">
+                <span>Let's Talk</span>
+                <i class="ri-chat-1-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         4. PROJECTS SECTION
+         ============================================== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section__header">
+          <span class="section__subtitle">My Recent Work</span>
+          <h2 class="section__title">Featured Projects</h2>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects__container grid">
+
+          <!-- Project 1: College Event Management Website -->
+          <article class="project__card">
+            <div class="project__img-wrapper">
+              <!-- EDIT PROJECT IMAGE HERE -->
+              <img 
+                src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80" 
+                alt="College Event Management Website" 
+                class="project__img"
+              >
+              <div class="project__overlay">
+                <a href="#contact" class="project__overlay-link" title="Live Preview">
+                  <i class="ri-external-link-line"></i>
+                </a>
+                <a href="https://github.com/Muskan1e" target="_blank" rel="noopener noreferrer" class="project__overlay-link" title="GitHub Code">
+                  <i class="ri-github-line"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project__content">
+              <div class="project__tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">PHP / DB</span>
+              </div>
+              <h3 class="project__title">College Event Management Website</h3>
+              <p class="project__description">
+                A full-featured web portal created for college fests and technical events. Features include event registrations, schedule management, participant tracking, and real-time announcements.
+              </p>
+              <div class="project__buttons">
+                <!-- EDIT LIVE DEMO AND GITHUB LINKS HERE -->
+                <a href="#contact" class="btn-link">
+                  <span>Live Preview</span>
+                  <i class="ri-arrow-right-up-line"></i>
+                </a>
+               
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Fronixplayer Foundation -->
+          <article class="project__card">
+            <div class="project__img-wrapper">
+              <!-- EDIT PROJECT IMAGE HERE -->
+              <img 
+                src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80" 
+                alt="Fronixplayer Foundation" 
+                class="project__img"
+              >
+              <div class="project__overlay">
+                <a href="#contact" class="project__overlay-link" title="Live Preview">
+                  <i class="ri-external-link-line"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project__overlay-link" title="GitHub Code">
+                  <i class="ri-github-line"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project__content">
+              <div class="project__tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Audio API</span>
+                <span class="tag">CSS3 Glassmorphism</span>
+              </div>
+              <h3 class="project__title">Fronixplayer Foundation</h3>
+              <p class="project__description">
+                An interactive custom media playback engine and UI foundation. Offers smooth playlist navigation, custom volume/scrubber sliders, visualizer bars, and dark responsive styling.
+              </p>
+              <div class="project__buttons">
+                <!-- EDIT LIVE DEMO AND GITHUB LINKS HERE -->
+                <a href="#contact" class="btn-link">
+                  <span>Live Preview</span>
+                  <i class="ri-arrow-right-up-line"></i>
+                </a>
+                
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Responsive Developer Portfolio -->
+          <article class="project__card">
+            <div class="project__img-wrapper">
+              <!-- EDIT PROJECT IMAGE HERE -->
+              <img 
+                src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80" 
+                alt="Modern Developer Portfolio" 
+                class="project__img"
+              >
+              <div class="project__overlay">
+                <a href="#home" class="project__overlay-link" title="Live Preview">
+                  <i class="ri-external-link-line"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project__overlay-link" title="GitHub Code">
+                  <i class="ri-github-line"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project__content">
+              <div class="project__tags">
+                <span class="tag">HTML5 / CSS3</span>
+                <span class="tag">Vanilla JS</span>
+                <span class="tag">Mobile First</span>
+              </div>
+              <h3 class="project__title">Modern Interactive Portfolio</h3>
+              <p class="project__description">
+                Single-page personal portfolio featuring custom animated cursor, dark/light theme switching, smooth scrollspy, Swiper carousel, and interactive contact form validation.
+              </p>
+              <div class="project__buttons">
+                <!-- EDIT LIVE DEMO AND GITHUB LINKS HERE -->
+                <a href="#home" class="btn-link">
+                  <span>Live Preview</span>
+                  <i class="ri-arrow-right-up-line"></i>
+                </a>
+               
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Smart Student Task & Notes Hub -->
+          <article class="project__card">
+            <div class="project__img-wrapper">
+              <!-- EDIT PROJECT IMAGE HERE -->
+              <img 
+                src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=800&q=80" 
+                alt="Student Task & Notes Hub" 
+                class="project__img"
+              >
+              <div class="project__overlay">
+                <a href="#contact" class="project__overlay-link" title="Live Preview">
+                  <i class="ri-external-link-line"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project__overlay-link" title="GitHub Code">
+                  <i class="ri-github-line"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project__content">
+              <div class="project__tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">LocalStorage</span>
+                <span class="tag">UI/UX</span>
+              </div>
+              <h3 class="project__title">Student Task & Notes Hub</h3>
+              <p class="project__description">
+                A productivity dashboard engineered for college students to organize daily study schedules, track assignment deadlines, and persist data smoothly in browser storage.
+              </p>
+              <div class="project__buttons">
+                <!-- EDIT LIVE DEMO AND GITHUB LINKS HERE -->
+                <a href="#contact" class="btn-link">
+                  <span>Live Preview</span>
+                  <i class="ri-arrow-right-up-line"></i>
+                </a>
+                
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         5. WORK / EXPERIENCE & EDUCATION SECTION
+         ============================================== -->
+    <section class="work section" id="work">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section__header">
+          <span class="section__subtitle">My Journey</span>
+          <h2 class="section__title">Education & Experience</h2>
+        </div>
+
+        <!-- Work / Education Tabs -->
+        <div class="work__tabs">
+          <button class="tab-btn active" data-target="#education">
+            <i class="ri-graduation-cap-line"></i>
+            <span>Education</span>
+          </button>
+          <button class="tab-btn" data-target="#experience">
+            <i class="ri-briefcase-line"></i>
+            <span>Experience & Roles</span>
+          </button>
+        </div>
+
+        <div class="work__content">
+          <!-- Tab 1: Education Content -->
+          <div class="timeline active" id="education">
+            <!-- Timeline Item 1 -->
+            <div class="timeline__item">
+              <div class="timeline__marker"></div>
+              <div class="timeline__card">
+                <div class="timeline__date">2024 - Present</div>
+                <h3 class="timeline__title">B.Tech in Computer Science & Engineering (2nd Year)</h3>
+                <h4 class="timeline__place">Engineering College / University</h4>
+                <p class="timeline__description">
+                  Currently in my 2nd year of B.Tech CSE. Core coursework includes Data Structures & Algorithms, Object-Oriented Programming (C++), Operating Systems, and Web Technologies.
+                </p>
+              </div>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="timeline__item">
+              <div class="timeline__marker"></div>
+              <div class="timeline__card">
+                <div class="timeline__date">2022 - 2024</div>
+                <h3 class="timeline__title">Senior Secondary Education (Class XII - PCM)</h3>
+                <h4 class="timeline__place">CBSE Board / High School</h4>
+                <p class="timeline__description">
+                  Completed senior secondary school with a focus on Physics, Chemistry, and Mathematics, developing a strong analytical and problem-solving foundation.
+                </p>
+              </div>
+            </div>
+
+            <!-- Timeline Item 3 -->
+            <div class="timeline__item">
+              <div class="timeline__marker"></div>
+              <div class="timeline__card">
+                <div class="timeline__date">2024 - Ongoing</div>
+                <h3 class="timeline__title">Self-Taught Web Development & Certifications</h3>
+                <h4 class="timeline__place">Online Learning & Coding Communities</h4>
+                <p class="timeline__description">
+                  Deep diving into frontend web development: Semantic HTML5, CSS3 animations, Flexbox/Grid systems, responsive design principles, and DOM manipulation in Vanilla JS.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2: Experience Content -->
+          <div class="timeline" id="experience">
+            <!-- Timeline Item 1 -->
+            <div class="timeline__item">
+              <div class="timeline__marker"></div>
+              <div class="timeline__card">
+                <div class="timeline__date">2025 - Present</div>
+                <h3 class="timeline__title">Frontend Project Lead</h3>
+                <h4 class="timeline__place">College Event Management Website</h4>
+                <p class="timeline__description">
+                  Led frontend UI design and implementation for the annual fest portal. Implemented responsive forms, interactive schedules, and handled cross-device layout optimization.
+                </p>
+              </div>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="timeline__item">
+              <div class="timeline__marker"></div>
+              <div class="timeline__card">
+                <div class="timeline__date">2025</div>
+                <h3 class="timeline__title">Core Developer & Contributor</h3>
+                <h4 class="timeline__place">Fronixplayer Foundation Project</h4>
+                <p class="timeline__description">
+                  Designed modern player controls, customized audio playback events, and applied mobile-first CSS architecture for seamless multi-screen responsiveness.
+                </p>
+              </div>
+            </div>
+
+            <!-- Timeline Item 3 -->
+            <div class="timeline__item">
+              <div class="timeline__marker"></div>
+              <div class="timeline__card">
+                <div class="timeline__date">2024 - 2025</div>
+                <h3 class="timeline__title">Active Tech Club Member & Hackathon Participant</h3>
+                <h4 class="timeline__place">College Technical Society</h4>
+                <p class="timeline__description">
+                  Participated in university-level hackathons and web development bootcamps, collaborating with peers on rapid prototyping and user interface design.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         6. SERVICES SECTION
+         ============================================== -->
+    <section class="services section" id="services">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section__header">
+          <span class="section__subtitle">What I Offer</span>
+          <h2 class="section__title">My Services</h2>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="services__container grid">
+          <!-- Service Card 1 -->
+          <div class="service__card">
+            <div class="service__icon">
+              <i class="ri-layout-masonry-line"></i>
+            </div>
+            <h3 class="service__title">Responsive Web Design</h3>
+            <p class="service__description">
+              Creating fluid, mobile-first web layouts that render cleanly across mobile phones, tablets, laptops, and ultra-wide desktops without layout breaks.
+            </p>
+            <ul class="service__features">
+              <li><i class="ri-check-line"></i> Mobile-first layouts</li>
+              <li><i class="ri-check-line"></i> Cross-browser support</li>
+              <li><i class="ri-check-line"></i> CSS Flexbox & Grid</li>
+            </ul>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="service__card">
+            <div class="service__icon">
+              <i class="ri-code-box-line"></i>
+            </div>
+            <h3 class="service__title">Frontend Development</h3>
+            <p class="service__description">
+              Translating Figma / UI designs into functional, semantic HTML, modern CSS3 styling, and clean, performant vanilla JavaScript with zero bloat.
+            </p>
+            <ul class="service__features">
+              <li><i class="ri-check-line"></i> Clean, readable code</li>
+              <li><i class="ri-check-line"></i> Interactive components</li>
+              <li><i class="ri-check-line"></i> Fast loading speeds</li>
+            </ul>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="service__card">
+            <div class="service__icon">
+              <i class="ri-paint-brush-line"></i>
+            </div>
+            <h3 class="service__title">UI/UX Optimization</h3>
+            <p class="service__description">
+              Elevating web experiences through thoughtful micro-interactions, smooth hover effects, intuitive typography, and accessible visual hierarchies.
+            </p>
+            <ul class="service__features">
+              <li><i class="ri-check-line"></i> Smooth animations</li>
+              <li><i class="ri-check-line"></i> Dark & Light mode</li>
+              <li><i class="ri-check-line"></i> Intuitive user flows</li>
+            </ul>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div class="service__card">
+            <div class="service__icon">
+              <i class="ri-speed-up-line"></i>
+            </div>
+            <h3 class="service__title">Performance & SEO</h3>
+            <p class="service__description">
+              Structuring web pages with search-engine-friendly metadata, semantic tags, optimized assets, and clean DOM trees for fast load times.
+            </p>
+            <ul class="service__features">
+              <li><i class="ri-check-line"></i> Semantic HTML5 tags</li>
+              <li><i class="ri-check-line"></i> Optimized asset loading</li>
+              <li><i class="ri-check-line"></i> High Lighthouse scores</li>
+            </ul>
+          </div>
+
+          <!-- Service Card 5 -->
+          <div class="service__card">
+            <div class="service__icon">
+              <i class="ri-bug-line"></i>
+            </div>
+            <h3 class="service__title">Bug Fixing & Redesign</h3>
+            <p class="service__description">
+              Diagnosing and resolving CSS responsiveness issues, fixing JavaScript bugs, and giving outdated websites a modern, polished facelift.
+            </p>
+            <ul class="service__features">
+              <li><i class="ri-check-line"></i> Responsive fixes</li>
+              <li><i class="ri-check-line"></i> CSS modernization</li>
+              <li><i class="ri-check-line"></i> Code refactoring</li>
+            </ul>
+          </div>
+
+          <!-- Service Card 6 -->
+          <div class="service__card">
+            <div class="service__icon">
+              <i class="ri-graduation-cap-line"></i>
+            </div>
+            <h3 class="service__title">Academic Project Guidance</h3>
+            <p class="service__description">
+              Collaborating on college engineering projects, building clean user-facing portals, and helping fellow students bring creative concepts online.
+            </p>
+            <ul class="service__features">
+              <li><i class="ri-check-line"></i> Project presentations</li>
+              <li><i class="ri-check-line"></i> Clean GitHub repos</li>
+              <li><i class="ri-check-line"></i> Clear documentation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         7. TESTIMONIALS SECTION (SWIPER.JS)
+         ============================================== -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section__header">
+          <span class="section__subtitle">Client & Peer Feedback</span>
+          <h2 class="section__title">Testimonials</h2>
+        </div>
+
+        <!-- Swiper Slider Container -->
+        <div class="testimonials__container swiper">
+          <div class="swiper-wrapper">
+
+            <!-- Testimonial 1 -->
+            <div class="swiper-slide testimonial__card">
+              <div class="testimonial__rating">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <p class="testimonial__quote">
+                "Muskan designed the frontend for our College Event Management portal. The user interface was clean, fast, and adapted flawlessly to mobile phones. Her dedication to details is impressive!"
+              </p>
+              <div class="testimonial__author">
+                <img 
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" 
+                  alt="Sneha Verma" 
+                  class="testimonial__img"
+                >
+                <div class="author__details">
+                  <h4 class="author__name">Sneha Verma</h4>
+                  <span class="author__role">College Event Coordinator</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="swiper-slide testimonial__card">
+              <div class="testimonial__rating">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <p class="testimonial__quote">
+                "Working with Muskan on the Fronixplayer project was a breeze. She quickly transformed complex concepts into intuitive UI elements and delivered clean, organized code ahead of schedule."
+              </p>
+              <div class="testimonial__author">
+                <img 
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" 
+                  alt="Aman Patel" 
+                  class="testimonial__img"
+                >
+                <div class="author__details">
+                  <h4 class="author__name">Aman Patel</h4>
+                  <span class="author__role">Tech Lead & Project Collaborator</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="swiper-slide testimonial__card">
+              <div class="testimonial__rating">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <p class="testimonial__quote">
+                "Muskan's enthusiasm for frontend development is truly commendable. As a 2nd year student, her problem solving attitude and grasp of modern design patterns are way ahead of the curve."
+              </p>
+              <div class="testimonial__author">
+                <img 
+                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" 
+                  alt="Dr. Priya Nair" 
+                  class="testimonial__img"
+                >
+                <div class="author__details">
+                  <h4 class="author__name">Dr. Priya Nair</h4>
+                  <span class="author__role">Assistant Professor, CSE Dept</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Swiper Pagination Dots -->
+          <div class="swiper-pagination"></div>
+
+          <!-- Swiper Navigation Arrows -->
+          <div class="swiper-button-prev"><i class="ri-arrow-left-s-line"></i></div>
+          <div class="swiper-button-next"><i class="ri-arrow-right-s-line"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         8. CONTACT SECTION
+         ============================================== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section__header">
+          <span class="section__subtitle">Get In Touch</span>
+          <h2 class="section__title">Contact Me</h2>
+        </div>
+
+        <div class="contact__container grid">
+          <!-- Contact Info Cards -->
+          <div class="contact__info">
+            <h3 class="contact__heading">Let's build something remarkable together!</h3>
+            <p class="contact__text">
+              Have a project idea, want to collaborate, or looking for an enthusiastic frontend intern? 
+              Feel free to reach out via the form or through my contact links below.
+            </p>
+
+            <div class="contact__cards">
+              <!-- Info Card 1: Email -->
+              <div class="contact__card">
+                <div class="contact__card-icon">
+                  <i class="ri-mail-send-line"></i>
+                </div>
+                <div class="contact__card-content">
+                  <h4 class="contact__card-title">Email Me</h4>
+                  <a href="mailto:muskansharm936@gmail.com" class="contact__card-data">muskansharm936@gmail.com</a>
+                </div>
+              </div>
+
+              <!-- Info Card 2: Phone -->
+              <div class="contact__card">
+                <div class="contact__card-icon">
+                  <i class="ri-phone-line"></i>
+                </div>
+                <div class="contact__card-content">
+                  <h4 class="contact__card-title">Call / WhatsApp</h4>
+                  <a href="tel:+919876543210" class="contact__card-data">+91 8168997322</a>
+                </div>
+              </div>
+
+              <!-- Info Card 3: Location -->
+              <div class="contact__card">
+                <div class="contact__card-icon">
+                  <i class="ri-map-pin-2-line"></i>
+                </div>
+                <div class="contact__card-content">
+                  <h4 class="contact__card-title">Location</h4>
+                  <span class="contact__card-data">Mohali,Punjab</span>
+                </div>
+              </div>
+
+              <!-- Info Card 4: LinkedIn -->
+              <div class="contact__card">
+                <div class="contact__card-icon">
+                  <i class="ri-linkedin-box-line"></i>
+                </div>
+                <div class="contact__card-content">
+                  <h4 class="contact__card-title">LinkedIn Profile</h4>
+                  <a href="https://www.linkedin.com/in/muskan-sharma-3a4b8537a" target="_blank" rel="noopener noreferrer" class="contact__card-data">muskan-sharma-3a4b8537a</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Interactive Form -->
+          <div class="contact__form-wrapper">
+           <form
+  class="contact__form"
+  id="contact-form"
+  action="https://formspree.io/f/xkjoezly"
+  method="POST"
+>
+              <!-- Name Input -->
+              <div class="form__group">
+                <label for="name" class="form__label">Your Name <span class="required">*</span></label>
+                <div class="form__input-box">
+                  <i class="ri-user-3-line form__input-icon"></i>
+                  <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    class="form__input" 
+                    placeholder="e.g. John Doe"
+                    required
+                  >
+                </div>
+                <span class="form__error" id="name-error">Please enter your name</span>
+              </div>
+
+              <!-- Email Input -->
+              <div class="form__group">
+                <label for="email" class="form__label">Your Email <span class="required">*</span></label>
+                <div class="form__input-box">
+                  <i class="ri-mail-line form__input-icon"></i>
+                  <input 
+                    type="email" 
+                    id="email" 
+                     
+                    name="email" 
+                    class="form__input" 
+                    placeholder="e.g. johndoe@gmail.com"
+                    required
+                  >
+                </div>
+                <span class="form__error" id="email-error">Please enter a valid email address</span>
+              </div>
+
+              <!-- Subject Input -->
+              <div class="form__group">
+                <label for="subject" class="form__label">Subject</label>
+                <div class="form__input-box">
+                  <i class="ri-file-text-line form__input-icon"></i>
+                  <input 
+                    type="text" 
+                    id="subject" 
+                    name="subject" 
+                    class="form__input" 
+                    placeholder="Project Inquiry / Job Opportunity"
+                  >
+                </div>
+              </div>
+
+              <!-- Message Textarea -->
+              <div class="form__group">
+                <label for="message" class="form__label">Your Message <span class="required">*</span></label>
+                <div class="form__input-box form__textarea-box">
+                  <i class="ri-chat-3-line form__input-icon"></i>
+                  <textarea 
+                    id="message" 
+                    name="message" 
+                    rows="5" 
+                    class="form__input form__textarea" 
+                    placeholder="Tell me about your project or inquiry..."
+                    required
+                  ></textarea>
+                </div>
+                <span class="form__error" id="message-error">Please enter your message (at least 10 characters)</span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn--primary btn--submit" id="submit-btn">
+                <span class="btn__text" >Send Message</span>
+                <i class="ri-send-plane-2-fill btn__icon"></i>
+                <div class="btn__spinner" id="btn-spinner"></div>
+              </button>
+
+              <!-- Form Response Alert Box -->
+              <div class="form__alert" id="form-alert" role="alert"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==============================================
+       9. FOOTER
+       ============================================== -->
+  <footer class="footer">
+    <div class="footer__container container grid">
+      <!-- Footer Brand Column -->
+      <div class="footer__content">
+        <a href="#home" class="footer__logo">
+          <span class="logo__bracket">&lt;</span>Muskan<span class="logo__accent">.dev</span><span class="logo__bracket"> /&gt;</span>
+        </a>
+        <p class="footer__tagline">
+          Crafting delightful digital experiences with passion, curiosity, and modern frontend technologies.
+        </p>
+      </div>
+
+      <!-- Quick Navigation Links -->
+      <div class="footer__content">
+        <h4 class="footer__title">Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="#home" class="footer__link">Home</a></li>
+          <li><a href="#about" class="footer__link">About</a></li>
+          <li><a href="#projects" class="footer__link">Projects</a></li>
+          <li><a href="#work" class="footer__link">Experience</a></li>
+          <li><a href="#services" class="footer__link">Services</a></li>
+          <li><a href="#contact" class="footer__link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Links Column -->
+      <div class="footer__content">
+        <h4 class="footer__title">Connect</h4>
+        <div class="footer__socials">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/muskan-sharma-3a4b8537a" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
+            <i class="ri-linkedin-fill"></i>
+          </a>
+          <!-- GitHub (EDIT HERE) -->
+          <a href="https://github.com/Muskan1e" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="GitHub">
+            <i class="ri-github-fill"></i>
+          </a>
+          <!-- Instagram (EDIT HERE) -->
+          <a href="https://www.instagram.com/muskansharma.86/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram">
+            <i class="ri-instagram-line"></i>
+          </a>
+          <!-- Email -->
+          <a href="mailto:muskansharm936@gmail.com" class="footer__social-link" aria-label="Email">
+            <i class="ri-mail-line"></i>
+          </a>
+        </div>
+        <p class="footer__status">
+          <i class="ri-checkbox-circle-fill text-accent"></i> Open to Internship Offers
+        </p>
+      </div>
+    </div>
+
+  
+   
+
+  <!-- ==============================================
+       SCROLL TO TOP BUTTON
+       ============================================== -->
+  <a href="#home" class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+    <i class="ri-arrow-up-line"></i>
+  </a>
+
+  <!-- ==============================================
+       SCRIPTS
+       ============================================== -->
+  <!-- Swiper.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- ScrollReveal CDN -->
+  <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+
+  <!-- Custom Main JS -->
+  <script src="main.js"></script>
+
+</body>
+</html>
