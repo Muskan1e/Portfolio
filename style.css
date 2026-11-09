@@ -2402,3 +2402,16 @@ section[id] {
     text-overflow: ellipsis;
   }
 }
+.footer {
+  text-align: center;
+  padding: 25px 15px;
+  background: #0d0920;
+  color: #aaa;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.footer strong {
+  color: #d946ef;
+  font-weight: 600;
+}
